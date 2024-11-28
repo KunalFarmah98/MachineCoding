@@ -17,11 +17,6 @@ import com.apps.kunalfarmah.machinecoding.ui.theme.MachineCodingTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val test = Test("KF",26)
-        val str = Test1().getString(test)
-        Log.d("JSON", str)
-        val testCopy = Test1().getJson(str)
-        Log.d("JSON", "${testCopy.name} , ${testCopy.age}")
         enableEdgeToEdge()
         setContent {
             MachineCodingTheme {
